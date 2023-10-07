@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <title>React ⚛️</title>
+  </head>
+  <!-- ReactDom.render is one of the most important functions in the react Dom library. 
+    It's going to take in two different arguments. 
+    The first of the arguments that we'll send to this function is react.createelement. 
+    And we're going to use this to create an element to add to the page. 
+    Instead of using, "<h1>Getting Started with React</h1>" here I want to create the same thing using react. 
+    So we'll say h1 is the type of element I want to create. 
+    Null is the second argument that will pass here because we don't want to pass any properties 
+    to this element. 
+    And then finally, we want to mimic the h1 fully by writing getting started with react. -->
+  <body>
+      <div id="root"></div>
+      
+      <script type="text/javascript">
+          ReactDOM.render(
+              React.createElement("h1", null, "Getting Started!"),
+              document.getElementById("root")
+          );
+      </script>
+  </body>
+  <!-- So to reactDom.render, we're sending two things. 
+    The first is the element we want to create. The second is where we want to put this. 
+    So we're saying, take this element and put it right here inside of the div. -->
+</html>
