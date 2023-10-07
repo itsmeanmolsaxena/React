@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      ul = React.createElement(
+        "ul",
+        { style: { color: "blue" } },
+        React.createElement("li", null, "First Element"),
+        React.createElement("li", null, "Second Element"),
+        React.createElement("li", null, "Third Element"),
+        React.createElement("li", null, "Fourth Element")
+      );
+
+      ReactDOM.render(
+        ul,
+        document.getElementById("root")
+      );
+    </script>
+    <!-- 
+        As our user interface becomes more complex, as we have more createElement calls on the page, 
+        our code starts to get a little hectic. And by that I just mean that every single element that 
+        I would need to create has to have its own createElement call. 
+        So what we want is some sort of a helper, some sort of a syntax to come fix this for us 
+        and that helper is called JSX. 
+        JSX or JavaScript as XML is an HTML-like syntax for creating UI elements. 
+    -->
+  </body>
+</html>
