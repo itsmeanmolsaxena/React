@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- 
+      When we use a tool like Babel, it's going to take this code that's not supported by the browser 
+      and turn it into code that is so that we don't have to write all of this code that is hard to read, 
+      it's sort of hard to write 
+    -->
+
+    <script type="text/javascript">
+      ReactDOM.render(
+        <ul>
+          <li>🤖</li>
+          <li>🤠</li>
+          <li>🌝</li>
+        </ul>,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
