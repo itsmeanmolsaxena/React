@@ -6,3 +6,6 @@ Chapter 2
     2. Creating React elements
     3. Refactoring elements using JSX
     4. Incorporaing Babel
+    5. Working With JSX
+
+Chapter 3
