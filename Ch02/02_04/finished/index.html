@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- 
+      The fastest way to get started with this is to use another one of these CDN links. 
+      And I'm going to add this here.
+     -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+      <div id="root"></div>
+
+      <!-- 
+        It's been minified for the browser so that it will work a little bit more quickly. 
+        And then the other thing that we need to do, we're still noticing if I refresh 
+        this that we have that syntax error, the thing we need to do to fix this is instead 
+        of using text javascript, we need to use text/babel. 
+        Babel is going to go through any of the script tags that have text Babel and 
+        it's going to transform any of these tags that don't work in the browser to those 
+        create element calls that do.
+       -->
+       
+      <script type="text/babel">
+        ReactDOM.render(
+          <ul>
+            <li>🤖</li>
+            <li>🤠</li>
+            <li>🌝</li>
+          </ul>,
+          document.getElementById("root")
+        );
+      </script>
+  </body>
+</html>
